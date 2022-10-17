@@ -5,7 +5,7 @@ metadata:
   generateName: grafana-notify-
   labels:
     codefresh.io/cert: grafana-job  
- spec:
+spec:
   template:
     spec:
       containers:
@@ -16,3 +16,4 @@ metadata:
           - "10"
       restartPolicy: Never
   backoffLimit: 2    
+ 
