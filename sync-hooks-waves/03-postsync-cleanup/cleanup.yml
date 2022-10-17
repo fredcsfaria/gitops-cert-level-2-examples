@@ -8,13 +8,15 @@ metadata:
     annotations:
      argocd.argoproj.io/hook: PostSync
   spec:
-   template:
-    spec:
-      containers:
-      - name: dummy-run
-        image: alpine
-        command:
-          - "sleep"
-          - "10"
-      restartPolicy: Never
-  #backoffLimit: 2    
+    template:
+      spec:
+        containers:
+        - name: dummy-run
+          image: alpine
+          command:
+            - "sleep"
+            - "10"
+        restartPolicy: Never
+    backoffLimit: 2   
+  
+  
